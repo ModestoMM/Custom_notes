@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/img_fondo_note"
+    tools:context=".Activities.EditNoteActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/ImageViewBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_left"/>
+
+        <TextView
+            android:id="@+id/TextViewtittleNote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="1"
+            android:text="Notas"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"/>
+
+
+        <Button
+            android:id="@+id/ButtonSaveContentNote"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:text="Guardar"
+            android:textSize="10dp"
+            android:textColor="@color/colorBlack"
+            android:backgroundTint="@color/colorWhite"
+            android:background="@drawable/rounded_button"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="55dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recicleViewImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:textColorHint="@color/colorBlack">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputContenidoNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:lineHeight="8dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Contenido"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ImageViewPhoto"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="90dp"
+            android:src="@drawable/ic_add_photo_white"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"/>
+
+        <ImageView
+            android:id="@+id/ImageViewZoom"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="90dp"
+            android:src="@drawable/ic_zoom_white"/>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

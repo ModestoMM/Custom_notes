@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "582909354821",
+    "firebase_url": "https://custom-notes-ace47.firebaseio.com",
+    "project_id": "custom-notes-ace47",
+    "storage_bucket": "custom-notes-ace47.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582909354821:android:e3963f5e55ea9ce487542c",
+        "android_client_info": {
+          "package_name": "com.modesto.customnotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582909354821-8jqsarvrp2dsatebcorc9d4a4rg80sd1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.modesto.customnotes",
+            "certificate_hash": "68c3c7a68cfe46a5c584b36189e3e45c54acc8c5"
+          }
+        },
+        {
+          "client_id": "582909354821-hvl3272e50tat9a35nqh6jg4hesm3ugs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB4w8ERh7Hq39Wj2RoYhiRX-Fx8WJJclI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582909354821-hvl3272e50tat9a35nqh6jg4hesm3ugs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/textViewTitleMyOrganizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titulo del Organizador"
+                android:gravity="center"
+                android:textStyle="italic|bold"
+                android:maxLines="1"
+                android:textSize="30dp"
+                android:textColor="@color/colorWhite"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGray"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:id="@+id/textViewRelativeTimeMyOrganizater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hace 0 min"
+                android:maxLines="1"
+                android:textSize="20dp"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewDeleteMyOrganizer"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_close_white"/>
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

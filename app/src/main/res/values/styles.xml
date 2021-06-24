@@ -1,0 +1,38 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="titleTextColor">@color/colorWhite</item>
+    </style>
+
+    <style name="FullScreenDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+
+        <!--Stylos para pantalla completa -->
+
+        <!--WindowNoTittle es ara que no tenga titulo nuestro Dialog que es para quien es el stylo -->
+        <item name="android:windowNoTitle">true</item>
+
+        <!-- Con este stylo evitamos que sea completamanete a pantalla completa ya que si se
+         aplica true hace que desaparesca la barra del status bar donde esta el nivel de bateria la red etc.-->
+        <item name="android:windowFullscreen">false</item>
+
+        <!-- ya que no queremos que sea un cuadro de dialogo flotante si no que se vea ocupando todooo el
+         ancho y largo de la pantalla-->
+        <item name="android:windowIsFloating">false</item>
+
+        <!-- Esta propiedad la usamos para indicar el color de fondo de la ventana-->
+        <item name="android:windowBackground">@android:color/white</item>
+
+    </style>
+
+</resources>
